@@ -1,0 +1,10 @@
+.mas {
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(25, 118, 210, 1) 32%, rgba(247, 0, 255, 1) 100%);
+}
+
+@media (min-width: 900px) {
+    .mas {
+        width: 100%;
+    }
+}

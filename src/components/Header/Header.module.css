@@ -1,0 +1,52 @@
+.logo{
+    height: 60px;
+    width: auto;
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    
+}
+
+.wrapper{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.navLink,
+.navLinkActive {
+    margin-right: 10px;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.header{
+    background-color: #1976d2;
+        color: white;
+        padding: 5px;
+
+        
+}
+
+@media (min-width: 900px) {
+    .logo{
+        height: 70px;
+    }
+
+        .wrapper{
+            justify-content: flex-start;
+            
+        }
+.linksContainer{
+margin-left: 85px;
+}
+                .navLink,
+                .navLinkActive {
+                    margin-right: 15px;
+                }
+}

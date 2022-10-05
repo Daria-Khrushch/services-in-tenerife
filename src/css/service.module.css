@@ -1,0 +1,109 @@
+.list {
+    display: grid;
+    font-size: 8px;
+    padding-right: 10px;
+    padding-left: 50px;
+    border-bottom: 1px solid white;
+    align-items: center;
+    color: black;
+    width: 100%;
+    grid-template-areas: 
+    "name  location price"
+    "name about contacts"
+    "name about contacts";
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.name{
+    grid-area: name;
+}
+.about {
+    grid-area: about;
+}
+.location{
+    grid-area: location;
+}
+.price {
+    grid-area: price;
+}
+.contacts{
+    grid-area: contacts;
+}
+
+.wrapper {
+    margin-bottom: 50px;
+}
+
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.price{
+    margin-left: 5px;
+}
+.contacts{
+    display: flex;
+flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.location,
+.about {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.telega {
+    width: 35px;
+    height: 35px;
+}
+
+@media (min-width: 900px) {
+    .list {
+        padding-left: 10px;
+        font-size: 18px;
+        grid-template-columns: 30% 40% 20%;
+             grid-template-areas:
+                 "name  location price contacts"
+                 "name about about contacts";
+         }
+
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+.contacts{
+    justify-content: center;
+}
+       
+    
+    .location,
+    .about {
+        padding-left: 20px;
+    }
+
+        .telega {
+            width: 50px;
+            height: 50px;
+        }
+
+}
+
+.largeGallery{
+width: 50vw;
+height: 50vh;
+}

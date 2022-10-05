@@ -1,0 +1,40 @@
+.navBar {
+    background-color: #1976d2;
+    color: white;
+   
+   padding: 10px;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    border-right: 2px solid white;
+}
+
+.navLink,
+.navLinkActive {
+    padding-top: 20px;
+}
+
+.active{
+text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+    .navBar {
+        padding: 20px;
+        padding-bottom: 30px;
+        font-size: 15px;
+        height: 100%;
+        width: 100%;
+        align-items: flex-start;
+        
+        
+    }
+
+        .navLink,
+        .navLinkActive {
+            padding-top: 15px;
+        }
+}
