@@ -9,9 +9,9 @@ import Nanny from "../Nanny/Nanny";
 import Sport from "../Sport/Sport";
 import Masseur from "../Masseur/Masseur";
 import openIcon from "./../../images/openIcon2.png";
-// import closeIcon from "./../../images/closeIcon.png";
 import s from "./ServicesPage.module.css";
 import styled from "styled-components";
+import Eyebrows from "../Eyebrows/Eyebrows";
 
 const NavBar = styled.nav`
   position: fixed;
@@ -68,6 +68,10 @@ const ServicesPage = (props) => {
         <Route
           path="/masseur"
           element={<Masseur state={props.state.masseurData} />}
+        />
+        <Route
+          path="/eyebrows"
+          element={<Eyebrows state={props.state.eyebrowsData} />}
         />
       </Routes>
     </div>

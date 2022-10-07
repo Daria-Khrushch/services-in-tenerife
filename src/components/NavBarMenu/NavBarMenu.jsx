@@ -36,10 +36,22 @@ const NavBarMenu = (props) => {
             ? `${s.navLinkActive} ${s.active}`
             : `${s.navLink} ${s.notActive}`
         }
+        to="/eyebrows"
+      >
+        {t("eyebrows")}
+      </NavLink>
+      <NavLink
+        onClick={props.showNavbar}
+        className={({ isActive }) =>
+          isActive
+            ? `${s.navLinkActive} ${s.active}`
+            : `${s.navLink} ${s.notActive}`
+        }
         to="/manicurist"
       >
         {t("manicurist")}
       </NavLink>
+
       <NavLink
         onClick={props.showNavbar}
         className={({ isActive }) =>

@@ -3,7 +3,9 @@ import woman from "./../images/woman.png";
 import hairdresserGalleryOne from './../images/photo_2022-10-03_18-31-25.jpg';
 import hairdresserGalleryTwo from './../images/photo_2022-10-03_18-34-42.jpg';
 import maniGalleryOne from './../images/man-one.jpg';
-import maniGalleryTwo from './../images/man-two.jpg'
+import maniGalleryTwo from './../images/man-two.jpg';
+import browsGallery from './../images/brows.jpg';
+import lashGallery from './../images/lash.jpg'
 
 
 const state = {
@@ -215,7 +217,7 @@ const state = {
       {
         id: 1,
         gallery: hairdresserGalleryOne,
-        about: "Мене звати Наталка. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціні помірні.",
+        about: "Мене звати Наталка. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціни помірні.",
         location: "San Isidro",
         contacts: {
           telega: 'https://t.me/Made_in_Ukrai',
@@ -236,7 +238,7 @@ const state = {
        {
         id: 3,
         gallery: hairdresserGalleryOne,
-        about: "Мене звати Наталка. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціні помірні.",
+        about: "Мене звати Наталка. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціни помірні.",
         location: "San Isidro",
         contacts: {
           telega: 'https://t.me/Made_in_Ukrai',
@@ -257,7 +259,7 @@ const state = {
        {
         id: 5,
         gallery: hairdresserGalleryOne,
-        about: "Мене звати Наталка. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціні помірні.",
+        about: "Мене звати Наталка. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціни помірні.",
         location: "San Isidro",
         contacts: {
           telega: 'https://t.me/Made_in_Ukrai',
@@ -278,7 +280,7 @@ const state = {
        {
         id: 7,
         gallery: hairdresserGalleryOne,
-        about: "Мене звати Наталка. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціні помірні.",
+        about: "Мене звати Наталка. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціни помірні.",
         location: "San Isidro",
         contacts: {
           telega: 'https://t.me/Made_in_Ukrai',
@@ -648,6 +650,70 @@ const state = {
         },
       },
     ],
+    eyebrowsData: [
+      {
+        id: 1,
+        gallery: browsGallery,
+        about: "Мене звати Наталка. Роблю ламінування брів якісно і шквидко. Розмовляю українською та російською. Звертайтесь в особисті!",
+        location: "San Isidro",
+        contacts: {
+          telega: 'https://t.me/Made_in_Ukrai',
+          whatsapp: " https://wa.me/+34604379859"
+        },
+      },
+      {
+        id: 2,
+        gallery: lashGallery,
+        about: "Меня зовут Светлана. Наращиваю ресницы более 5 лет. Принимаю у себя в салоне, возможен выезд на дом. Сделаю из вас красотку. Пишите!",
+        location: "Alcalá",
+        contacts: {
+          telega: 'https://t.me/Made_in_Ukrai',
+          whatsapp: " https://wa.me/+34604379859"
+        },
+      },
+         {
+        id: 3,
+        gallery: browsGallery,
+        about: "Мене звати Наталка. Роблю ламінування брів якісно і шквидко. Розмовляю українською та російською. Звертайтесь в особисті!",
+        location: "San Isidro",
+        contacts: {
+          telega: 'https://t.me/Made_in_Ukrai',
+          whatsapp: " https://wa.me/+34604379859"
+        },
+      },
+      {
+        id: 4,
+        gallery: lashGallery,
+        about: "Меня зовут Светлана. Наращиваю ресницы более 5 лет. Принимаю у себя в салоне, возможен выезд на дом. Сделаю из вас красотку. Пишите!",
+        location: "Alcalá",
+        contacts: {
+          telega: 'https://t.me/Made_in_Ukrai',
+          whatsapp: " https://wa.me/+34604379859"
+        },
+      },
+         {
+        id: 5,
+        gallery: browsGallery,
+        about: "Мене звати Наталка. Роблю ламінування брів якісно і шквидко. Розмовляю українською та російською. Звертайтесь в особисті!",
+        location: "San Isidro",
+        contacts: {
+          telega: 'https://t.me/Made_in_Ukrai',
+          whatsapp: " https://wa.me/+34604379859"
+        },
+      },
+      {
+        id: 6,
+        gallery: lashGallery,
+        about: "Меня зовут Светлана. Наращиваю ресницы более 5 лет. Принимаю у себя в салоне, возможен выезд на дом. Сделаю из вас красотку. Пишите!",
+        location: "Alcalá",
+        contacts: {
+          telega: 'https://t.me/Made_in_Ukrai',
+          whatsapp: " https://wa.me/+34604379859"
+        },
+      },
+      
+    ],
+    
   }
 };
 
