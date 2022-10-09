@@ -12,6 +12,7 @@ import openIcon from "./../../images/openIcon2.png";
 import s from "./ServicesPage.module.css";
 import styled from "styled-components";
 import Eyebrows from "../Eyebrows/Eyebrows";
+import Delivery from "../Delivery/Delivery";
 
 const NavBar = styled.nav`
   position: fixed;
@@ -72,6 +73,10 @@ const ServicesPage = (props) => {
         <Route
           path="/eyebrows"
           element={<Eyebrows state={props.state.eyebrowsData} />}
+        />
+        <Route
+          path="/delivery"
+          element={<Delivery state={props.state.deliveryData} />}
         />
       </Routes>
     </div>

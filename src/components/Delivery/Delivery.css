@@ -1,0 +1,10 @@
+.driver {
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(25, 118, 210, 1) 32%, rgba(255, 255, 255, 1) 100%);
+}
+
+@media (min-width: 900px) {
+    .driver {
+        width: 100%;
+    }
+}

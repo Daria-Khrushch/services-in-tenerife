@@ -1,29 +1,22 @@
 import React from "react";
 import icon from "./../../images/telegram.png";
 import wpIcon from "./../../images/icons8-whatsapp-48.png";
-import s from "./Manicurist.module.css";
+import "./Delivery.css";
+import s from "./../../css/service.module.css";
 
-const Manicurist = (props) => {
+const Delivery = (props) => {
   return (
-    <div className={s.manicur}>
+    <div className="delivery">
       <div className={s.wrapper}>
         {props.state.map((c) => (
           <ul key={c.id} className={s.list}>
-            <li className={s.gallery}>
-              <img className={s.galleryItem} src={c.gallery} alt="gallery" />
+            <li className={s.name}>
+              <img className={s.avatar} src={c.avatar} alt="" />
+              <div>{c.name}</div>
             </li>
-            <li className={s.about}>
-              {c.about}
-              <a
-                className={s.workLink}
-                href={c.contacts.instagram}
-                target="_blank"
-                rel="noreferrer"
-              >
-                тут.
-              </a>
-            </li>
+            <li className={s.about}>{c.about}</li>
             <li className={s.location}>{c.location}</li>
+            <li className={s.price}>{c.price}</li>
             <li className={s.contacts}>
               <a
                 className={s.link}
@@ -50,4 +43,4 @@ const Manicurist = (props) => {
   );
 };
 
-export default Manicurist;
+export default Delivery;
