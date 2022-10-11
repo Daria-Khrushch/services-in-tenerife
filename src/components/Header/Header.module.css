@@ -18,7 +18,14 @@
 
 .navLink,
 .navLinkActive {
-    margin-right: 10px;
+  margin-right: 15px;
+    font-size: 12px;
+   
+}
+
+.linksContainer{
+    padding-left: 50px;
+    padding-right: 20px;
 }
 
 .active{
@@ -33,7 +40,18 @@
         
 }
 
+
 @media (min-width: 900px) {
+    .navLink,
+        .navLinkActive {
+            margin-right: 15px;
+            font-size: 18px;
+    
+        }
+    .linksContainer {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     .logo{
         height: 70px;
     }
