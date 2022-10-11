@@ -5,7 +5,11 @@ import hairdresserGalleryTwo from './../images/photo_2022-10-03_18-34-42.jpg';
 import radmiraManicur from './../images/manicur/radmira.jpg';
 // import maniGalleryTwo from './../images/man-two.jpg';
 import browsGallery from './../images/brows.jpg';
-import lashGallery from './../images/lash.jpg'
+import lashGallery from './../images/lash.jpg';
+import productOne from "./../images/products/maneg1.jpg";
+import productTwo from "./../images/products/maneg2.jpg";
+import productThree from "./../images/products/maneg3.jpg";
+
 
 
 const state = {
@@ -729,7 +733,41 @@ const state = {
       },
     ]
     
-  }
+  },
+  BuyPage: 
+    [
+      {
+        id: 1,
+        text: "Продам детский манеж. В хорошем состоянии.  Размеры: 1х1 метр. Самовывоз из Parque de la Reina, Cho.",
+        price: "30€",
+        pictures: {
+          one: productOne ,
+          two: productTwo,
+          three: productThree,
+        },
+        contacts: {
+          telega: 'https://t.me/Made_in_Ukrai',
+          whatsapp: " https://wa.me/+34604379859"
+        },
+
+      },
+      {
+        id: 2,
+        text: "Продам детский манеж. В хорошем состоянии. Размеры: 1х1 метр. Самовывоз из Parque de la Reina, Cho.",
+        price: "30€",
+        pictures: {
+          one: productOne ,
+          two: productTwo,
+          three: productThree,
+        },
+        contacts: {
+          telega: 'https://t.me/Made_in_Ukrai',
+          whatsapp: " https://wa.me/+34604379859"
+        },
+
+      },
+    ]
+  
 };
 
 export default state;

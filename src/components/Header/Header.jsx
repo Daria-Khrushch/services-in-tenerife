@@ -33,6 +33,16 @@ const Header = () => {
           >
             {t("feeds")}
           </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? `${s.navLinkActive} ${s.active}`
+                : `${s.navLink} ${s.notActive}`
+            }
+            to="/buy"
+          >
+            {t("products")}
+          </NavLink>
         </div>
       </div>
     </div>
