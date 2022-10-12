@@ -3,7 +3,7 @@ import woman from "./../images/woman.png";
 import hairdresserGalleryOne from './../images/photo_2022-10-03_18-31-25.jpg';
 import hairdresserGalleryTwo from './../images/photo_2022-10-03_18-34-42.jpg';
 import radmiraManicur from './../images/manicur/radmira.jpg';
-// import maniGalleryTwo from './../images/man-two.jpg';
+import nataliaManicur from './../images/manicur/natalia.jpg';
 import browsGallery from './../images/brows.jpg';
 import lashGallery from './../images/lash.jpg';
 import productOne from "./../images/products/maneg1.jpg";
@@ -306,7 +306,7 @@ const state = {
     ],
     manicuristData: [
       {
-        id: "Radmira",
+        id: "Radmira+34689673169",
         gallery: radmiraManicur,
         about: "Меня зовут Радмира. Делаю педикюр и маникюр на севере острова в Icod de los Vinos. Возможен выезд в ближайшие города. Маникюр+гель лак 30€. Педикюр+гель лак 35€.  Опыт работы 6 лет. Сухожар, одноразовые расходные материалы. Одноразовые фрезы для педикюра. Говорю на русском, испанском, немного на казахском. Мои работы можно посмотреть ",
         location: "Tenerife North, Icod de los Vinos",
@@ -316,96 +316,17 @@ const state = {
           instagram: "https://instagram.com/nails_caxar_tenerife?igshid=YmMyMTA2M2Y="
         },
       },
-      // {
-      //   id: 2,
-      //   gallery: maniGalleryTwo,
-      //   about: " Меня зовут Ольга и я дипломированный мастер маникюра, педикюра, наращивания ногтей, покрытия шеллаком (более 70 цветов в коллекции) и биогелем, наращивания.",
-      //   location: "Santa Cruz",
-      //    contacts: {
-      //     telega: 'https://t.me/Made_in_Ukrai',
-      //     whatsapp: " https://wa.me/+34604379859"
-      //   },
-      // },
-      // {
-      //   id: 3,
-      //   gallery: maniGalleryOne,
-      //   about: "Я Олена. Роблю апаратний або обрізний манікюр і педикюр, лікую та поліпшую рост нігтьових пластин, роблю нарощування нігтів та корекцію, створюю різні види манікюру та педикюру.",
-      //   location: "Fraile",
-      //    contacts: {
-      //     telega: 'https://t.me/Made_in_Ukrai',
-      //     whatsapp: " https://wa.me/+34604379859"
-      //   },
-      // },
-      // {
-      //   id: 4,
-      //   gallery: maniGalleryTwo,
-      //   about: " Меня зовут Ольга и я дипломированный мастер маникюра, педикюра, наращивания ногтей, покрытия шеллаком (более 70 цветов в коллекции) и биогелем, наращивания.",
-      //   location: "Santa Cruz",
-      //    contacts: {
-      //     telega: 'https://t.me/Made_in_Ukrai',
-      //     whatsapp: " https://wa.me/+34604379859"
-      //   },
-      // },
-      // {
-      //   id: 5,
-      //   gallery: maniGalleryOne,
-      //   about: "Я Олена. Роблю апаратний або обрізний манікюр і педикюр, лікую та поліпшую рост нігтьових пластин, роблю нарощування нігтів та корекцію, створюю різні види манікюру та педикюру.",
-      //   location: "Fraile",
-      //    contacts: {
-      //     telega: 'https://t.me/Made_in_Ukrai',
-      //     whatsapp: " https://wa.me/+34604379859"
-      //   },
-      // },
-      // {
-      //   id: 6,
-      //   gallery: maniGalleryTwo,
-      //   about: " Меня зовут Ольга и я дипломированный мастер маникюра, педикюра, наращивания ногтей, покрытия шеллаком (более 70 цветов в коллекции) и биогелем, наращивания.",
-      //   location: "Santa Cruz",
-      //    contacts: {
-      //     telega: 'https://t.me/Made_in_Ukrai',
-      //     whatsapp: " https://wa.me/+34604379859"
-      //   },
-      // },
-      // {
-      //   id: 7,
-      //   gallery: maniGalleryOne,
-      //   about: "Я Олена. Роблю апаратний або обрізний манікюр і педикюр, лікую та поліпшую рост нігтьових пластин, роблю нарощування нігтів та корекцію, створюю різні види манікюру та педикюру.",
-      //   location: "Fraile",
-      //    contacts: {
-      //     telega: 'https://t.me/Made_in_Ukrai',
-      //     whatsapp: " https://wa.me/+34604379859"
-      //   },
-      // },
-      // {
-      //   id: 8,
-      //   gallery: maniGalleryTwo,
-      //   about: " Меня зовут Ольга и я дипломированный мастер маникюра, педикюра, наращивания ногтей, покрытия шеллаком (более 70 цветов в коллекции) и биогелем, наращивания.",
-      //   location: "Santa Cruz",
-      //    contacts: {
-      //     telega: 'https://t.me/Made_in_Ukrai',
-      //     whatsapp: " https://wa.me/+34604379859"
-      //   },
-      // },
-      // {
-      //   id: 9,
-      //   gallery: maniGalleryOne,
-      //   about: "Я Олена. Роблю апаратний або обрізний манікюр і педикюр, лікую та поліпшую рост нігтьових пластин, роблю нарощування нігтів та корекцію, створюю різні види манікюру та педикюру.",
-      //   location: "Fraile",
-      //    contacts: {
-      //     telega: 'https://t.me/Made_in_Ukrai',
-      //     whatsapp: " https://wa.me/+34604379859"
-      //   },
-      // },
-      // {
-      //   id: 10,
-      //   gallery: maniGalleryTwo,
-      //   about: " Меня зовут Ольга и я дипломированный мастер маникюра, педикюра, наращивания ногтей, покрытия шеллаком (более 70 цветов в коллекции) и биогелем, наращивания.",
-      //   location: "Santa Cruz",
-      //    contacts: {
-      //     telega: 'https://t.me/Made_in_Ukrai',
-      //     whatsapp: " https://wa.me/+34604379859"
-      //   },
-      // },
+      {
+        id: "Natalia+34642673891",
+        gallery: nataliaManicur,
+        about: "Меня зовут Наталья. Предоставляю услуги маникюра, педикюра, наращивание и коррекция гелем и акригелем. А также удаление натоптышей, мозолей и лечение врастающих ногтей. Опыт работы более 6 лет. Также окончила медицинскую школу по специальности «Техник медицинской стерилизации инструмента», поэтому безопасность в салоне для меня играет очень важную роль. Принимаю в салоне по адресу Pl. César Monrique 4, Adeje. Разговариваю на Украинском, русском, польском и английском языках. Маникюр без покрытия 25€. Педикюр без покрытия 35€. Пишите, отправлю полный прайс услуг! Мои работы можно посмотреть ",
+        location: "Pl. César Monrique 4, Adeje",
+         contacts: {
+          telega: 'https://t.me/+34642673891',
+           whatsapp: "https://wa.me/+34642673891",
+          instagram: "https://instagram.com/perfectnailses?igshid=YmMyMTA2M2Y="
+        },
+      },
     ],
     nannyData: [
       {
