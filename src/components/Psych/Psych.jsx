@@ -4,6 +4,7 @@ import wpIcon from "./../../images/icons8-whatsapp-48.png";
 import Irena from "./../../images/phsych/Irena.jpg";
 import "./Psych.css";
 import s from "./../../css/service.module.css";
+import style from "./../Eyebrows/Eyebrows.module.css";
 
 const Psych = (props) => {
   return (
@@ -40,14 +41,13 @@ const Psych = (props) => {
           </ul>
         ))}
 
-        <ul className={s.list}>
-          <li className={s.name}>
-            <img className="irenaAvatar" src={Irena} alt="" />
-            <div>Ірена Шатінська</div>
+        <ul className={style.list}>
+          <li className={style.gallery}>
+            <img src={Irena} alt="" />
           </li>
-          <li className={s.about}>
-            Я клінічний психолог, практичний консультуючий спеціаліст,
-            сертифікована в модальностях позитивна психотерапія та
+          <li className={style.about}>
+            Я - Ірена Шатінська, клінічний психолог, практичний консультуючий
+            спеціаліст, сертифікована в модальностях позитивна психотерапія та
             емоційно-фокусованиа терапія пар. Використовую інтеграційний
             мультимодальний підхід з елементами гештальт-терапії, символ-драми,
             арт-терапії, екзистенційної психотерапії, сімейної системної
@@ -64,7 +64,7 @@ const Psych = (props) => {
             сенсопокладання, екзитенційні кризи, психосоматика. З чим не працюю:
             залежності (наркоманія, алкоголізм, ігроманія), душевні захворювання
             із необхідною медикаментозною підтримкою, суїцидальні наміри та дії.
-            Почитати мої статті можна у
+            Ціна: 35€ за годину. Почитати мої статті можна у
             <a
               className="personalLink"
               target="_blank"
@@ -87,27 +87,26 @@ const Psych = (props) => {
             <br />
             Звертайтесь! Буду рада допомогти.
           </li>
-          <li className={s.location}>
+          <li className={style.location}>
             Online, Alcalá, Puerto de Santiago, Los Gigantes
           </li>
-          <li className={s.price}>35€/год.</li>
-          <li className={s.contacts}>
+          <li className={style.contacts}>
             <a
-              className={s.link}
+              className={style.link}
               href="https://t.me/+380503716050"
               target="_blank"
               rel="noreferrer"
             >
-              <img className={s.telega} src={icon} alt="icon" />
+              <img className={style.telega} src={icon} alt="icon" />
             </a>
 
             <a
-              className={s.link}
+              className={style.link}
               href="https://wa.me/+380503716050"
               target="_blank"
               rel="noreferrer"
             >
-              <img className={s.telega} src={wpIcon} alt="icon" />
+              <img className={style.telega} src={wpIcon} alt="icon" />
             </a>
           </li>
         </ul>
