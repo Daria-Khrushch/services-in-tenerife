@@ -10,6 +10,12 @@ import productOne from "./../images/products/maneg1.jpg";
 import productTwo from "./../images/products/maneg2.jpg";
 import productThree from "./../images/products/maneg3.jpg";
 import cookerTatiana from './../images/cooker/Tatiana.jpg';
+import juliaDressOne from './../images/products/juliaDressOne.jpg';
+import juliaDressTwo from './../images/products/juliaDressTwo.jpg';
+import juliaDressThree from './../images/products/juliaDressThree.jpg';
+import juliaDressFour from './../images/products/juliaDressFour.jpg';
+import juliaDressFive from './../images/products/juliaDressFive.jpg';
+
 
 
 
@@ -680,6 +686,8 @@ const state = {
           one: productOne ,
           two: productTwo,
           three: productThree,
+          four: productOne,
+          five: productTwo,
         },
         contacts: {
           telega: 'https://t.me/Made_in_Ukrai',
@@ -687,18 +695,20 @@ const state = {
         },
 
       },
-      {
-        id: 2,
-        text: "Продам детский манеж. В хорошем состоянии. Размеры: 1х1 метр. Самовывоз из Parque de la Reina, Cho.",
-        price: "30€",
+       {
+        id: "Julia",
+        text: "Продам красивые платья. Цены от 15 евро. Нахожусь на юге Тенерифе - Коста Адехе. Пишите пожалуйста в личные сообщения для детальной информации.",
+        price: "от 15€",
         pictures: {
-          one: productOne ,
-          two: productTwo,
-          three: productThree,
+          one: juliaDressOne ,
+          two: juliaDressTwo,
+          three: juliaDressThree,
+          four: juliaDressFour,
+          five: juliaDressFive,
         },
         contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
+          telega: 'https://t.me/+34613402213',
+          whatsapp: " https://wa.me/+34613402213"
         },
 
       },

@@ -88,7 +88,7 @@ const Psych = (props) => {
             Звертайтесь! Буду рада допомогти.
           </li>
           <li className={style.location}>
-            Online, Alcalá, Puerto de Santiago, Los Gigantes
+            Online або Alcalá, Puerto de Santiago, Los Gigantes
           </li>
           <li className={style.contacts}>
             <a

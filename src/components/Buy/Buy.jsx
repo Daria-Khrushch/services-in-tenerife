@@ -45,6 +45,20 @@ const Buy = (props) => {
                     alt="product"
                   />
                 </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className={s.productImg}
+                    src={c.pictures.four}
+                    alt="product"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className={s.productImg}
+                    src={c.pictures.five}
+                    alt="product"
+                  />
+                </SwiperSlide>
               </Swiper>
             </li>
             <li className={s.text}>{c.text}</li>
