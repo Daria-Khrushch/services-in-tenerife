@@ -107,6 +107,17 @@ const NavBarMenu = (props) => {
       >
         {t("cleaning")}
       </NavLink>
+      <NavLink
+        onClick={props.showNavbar}
+        className={({ isActive }) =>
+          isActive
+            ? `${s.navLinkActive} ${s.active}`
+            : `${s.navLink} ${s.notActive}`
+        }
+        to="/cook"
+      >
+        {t("cooker")}
+      </NavLink>
     </div>
   );
 };

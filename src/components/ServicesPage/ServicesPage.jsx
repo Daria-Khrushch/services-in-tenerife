@@ -13,6 +13,7 @@ import s from "./ServicesPage.module.css";
 import styled from "styled-components";
 import Eyebrows from "../Eyebrows/Eyebrows";
 import Delivery from "../Delivery/Delivery";
+import Cooker from "../Cooker/Cooker";
 
 const NavBar = styled.nav`
   position: fixed;
@@ -78,6 +79,7 @@ const ServicesPage = (props) => {
           path="/delivery"
           element={<Delivery state={props.state.deliveryData} />}
         />
+        <Route path="/cook" element={<Cooker state={props.state.cookData} />} />
       </Routes>
     </div>
   );

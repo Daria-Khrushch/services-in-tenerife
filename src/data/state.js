@@ -9,6 +9,7 @@ import lashGallery from './../images/lash.jpg';
 import productOne from "./../images/products/maneg1.jpg";
 import productTwo from "./../images/products/maneg2.jpg";
 import productThree from "./../images/products/maneg3.jpg";
+import cookerTatiana from './../images/cooker/Tatiana.jpg';
 
 
 
@@ -651,6 +652,18 @@ const state = {
           whatsapp: " https://wa.me/+34604379859"
         },
         price: "",
+      },
+    ],
+    cookData: [
+       {
+        id:"Tatiana+380965143333",
+        gallery: cookerTatiana,
+        about: "Меня зовут Татьяна и я шеф-повар. Опыт работы в ресторанном бизнесе более 10 лет, работаем качественно с соблюдением всех канонов еды. Готовим правильные, полезные и очень вкусные разнообразные блюда. Сами выпекаем хлебобулочные изделия, торты, любые десерты. Есть доставка по северу острова или самовывоз. Можем выезжать обслуживать кейтеринг (юг и север), пикники на свежем воздухе, приготовление для группы туристов, возможна готовка как у вас на дому, так и у нас.",
+        location: "South and North Tenerife",
+        contacts: {
+          telega: 'https://t.me/+380965143333',
+          whatsapp: " https://wa.me/+380965143333"
+        },
       },
     ]
     
