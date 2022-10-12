@@ -708,7 +708,7 @@ const state = {
         },
         contacts: {
           telega: 'https://t.me/+34613402213',
-          whatsapp: " https://wa.me/+34613402213"
+          insta: "https://instagram.com/juliadress777?igshid=YmMyMTA2M2Y=",
         },
 
       },

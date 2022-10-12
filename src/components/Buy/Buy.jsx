@@ -1,6 +1,7 @@
 import React from "react";
 import icon from "./../../images/telegram.png";
 import wpIcon from "./../../images/icons8-whatsapp-48.png";
+import insta from "./../../images/instagram.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper";
 import "swiper/css";
@@ -73,14 +74,26 @@ const Buy = (props) => {
                 <img className={s.telega} src={icon} alt="icon" />
               </a>
 
-              <a
-                className={s.link}
-                href={c.contacts.whatsapp}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img className={s.telega} src={wpIcon} alt="icon" />
-              </a>
+              {c.contacts.whatsapp && (
+                <a
+                  className={s.link}
+                  href={c.contacts.whatsapp}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img className={s.telega} src={wpIcon} alt="icon" />
+                </a>
+              )}
+              {c.contacts.insta && (
+                <a
+                  className={s.link}
+                  href={c.contacts.insta}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img className={s.telega} src={insta} alt="icon" />
+                </a>
+              )}
             </li>
           </ul>
         ))}
