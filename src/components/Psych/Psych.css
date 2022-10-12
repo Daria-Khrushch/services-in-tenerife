@@ -13,3 +13,12 @@
     color: rgba(25, 118, 210) ;
     text-decoration: underline;
 }
+
+.more {
+    display: none;
+}
+
+.btn{
+color: rgba(25, 118, 210);
+    text-decoration: underline;
+}
