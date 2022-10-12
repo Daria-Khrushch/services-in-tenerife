@@ -665,8 +665,10 @@ const state = {
           whatsapp: " https://wa.me/+380965143333"
         },
       },
+    ],
+    psychData: [
+     
     ]
-    
   },
   BuyPage: 
     [

@@ -14,6 +14,7 @@ import styled from "styled-components";
 import Eyebrows from "../Eyebrows/Eyebrows";
 import Delivery from "../Delivery/Delivery";
 import Cooker from "../Cooker/Cooker";
+import Psych from "../Psych/Psych";
 
 const NavBar = styled.nav`
   position: fixed;
@@ -80,6 +81,10 @@ const ServicesPage = (props) => {
           element={<Delivery state={props.state.deliveryData} />}
         />
         <Route path="/cook" element={<Cooker state={props.state.cookData} />} />
+        <Route
+          path="/psychology"
+          element={<Psych state={props.state.psychData} />}
+        />
       </Routes>
     </div>
   );

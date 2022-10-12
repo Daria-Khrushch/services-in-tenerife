@@ -1,6 +1,7 @@
 import React from "react";
 import icon from "./../../images/telegram.png";
 import wpIcon from "./../../images/icons8-whatsapp-48.png";
+
 import "./Delivery.css";
 import s from "./../../css/service.module.css";
 

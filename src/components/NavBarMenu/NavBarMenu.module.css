@@ -37,5 +37,6 @@ text-decoration: underline;
         .navLink,
         .navLinkActive {
             padding-top: 15px;
+            font-size: 12px;
         }
 }
