@@ -1,5 +1,5 @@
 import React from "react";
-import canary from "./../../images/canary.png";
+import canary from "./../../images/icon.jpg";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import s from "./Header.module.css";

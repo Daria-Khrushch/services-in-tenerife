@@ -1,8 +1,8 @@
 .logo{
-    height: 60px;
+    height: 50px;
     width: auto;
     position: absolute;
-    bottom: -5px;
+    bottom: 5px;
     left: 10px;
     
 }
@@ -11,16 +11,20 @@
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     position: relative;
 
 }
 
 .navLink,
 .navLinkActive {
-  margin-right: 15px;
-    font-size: 12px;
-   
+  
+    font-size: 15px; 
+}
+
+.navLink:not(:last-child),
+.navLinkActive:not(:last-child){
+margin-right: 10px;
 }
 
 .navLink:hover{
@@ -28,8 +32,7 @@
 }
 
 .linksContainer{
-    padding-left: 50px;
-    padding-right: 20px;
+    padding-right: 5px;
 }
 
 .active{
@@ -57,18 +60,18 @@
             padding-right: 20px;
         }
     .logo{
-        height: 70px;
+        height: 60px;
     }
 
-        .wrapper{
-            justify-content: flex-start;
-            
+        .wrapper {
+            justify-content: center;
         }
+
 .linksContainer{
 margin-left: 85px;
 }
-                .navLink,
-                .navLinkActive {
-                    margin-right: 15px;
-                }
+                          .navLink:not(:last-child),
+                          .navLinkActive:not(:last-child) {
+                              margin-right: 20px;
+                          }
 }
