@@ -15,6 +15,7 @@ import juliaDressTwo from './../images/products/juliaDressTwo.jpg';
 import juliaDressThree from './../images/products/juliaDressThree.jpg';
 import juliaDressFour from './../images/products/juliaDressFour.jpg';
 import juliaDressFive from './../images/products/juliaDressFive.jpg';
+import cookerLena from './../images/cooker/cookerLena.jpg'
 
 
 
@@ -669,6 +670,15 @@ const state = {
         contacts: {
           telega: 'https://t.me/+380965143333',
           whatsapp: " https://wa.me/+380965143333"
+        },
+      },
+       {
+        id:"Lena+34634495066",
+        gallery: cookerLena,
+        about: "Меня зовут Лена. Приготовлю и доставлю вареники с картошкой и жареным луком, с картошкой без жареного лука (нежные), с творогом соленые (добавляю укроп для вкуса) и с творогом сладкие. Пельмени свиные, свино-говяжьи, из индейки и курицы. Есть доставка по Югу (по договоренности). Цена 10-12 € за 1 кг. Могу испечь блинчики, сырники. Приготовить первые блюда включая конечно же борщ, а также плов, голубцы, котлетки(пальчики оближешь).  Знаю украинский и русский языки. ",
+        location: "Tenerife South",
+        contacts: {
+          whatsapp: " https://wa.me/+34634495066"
         },
       },
     ],

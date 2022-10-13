@@ -15,14 +15,16 @@ const Cooker = (props) => {
             <li className={s.about}>{c.about}</li>
             <li className={s.location}>{c.location}</li>
             <li className={s.contacts}>
-              <a
-                className={s.link}
-                href={c.contacts.telega}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img className={s.telega} src={icon} alt="icon" />
-              </a>
+              {c.contacts.telega && (
+                <a
+                  className={s.link}
+                  href={c.contacts.telega}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img className={s.telega} src={icon} alt="icon" />
+                </a>
+              )}
 
               <a
                 className={s.link}
