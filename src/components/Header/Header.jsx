@@ -23,7 +23,7 @@ const Header = () => {
           >
             {t("services")}
           </NavLink>
-          <NavLink
+          {/* <NavLink
             className={({ isActive }) =>
               isActive
                 ? `${s.navLinkActive} ${s.active}`
@@ -32,7 +32,7 @@ const Header = () => {
             to="/feeds"
           >
             {t("feeds")}
-          </NavLink>
+          </NavLink> */}
           <NavLink
             className={({ isActive }) =>
               isActive
