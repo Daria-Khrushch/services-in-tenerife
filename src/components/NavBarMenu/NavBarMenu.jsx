@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const NavBarMenu = (props) => {
   const { t } = useTranslation();
+
   return (
     <div className={s.navBar}>
       <NavLink

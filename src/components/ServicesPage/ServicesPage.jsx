@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import NavBarMenu from "../NavBarMenu/NavBarMenu";
+// import NavBarMenu from "../NavBarMenu/NavBarMenu";
 import Cleaning from "../Cleaning/Cleaning";
 import Hairdresser from "../Hairdresser/Hairdresser";
 import Driver from "../Driver/Driver";
@@ -15,6 +15,7 @@ import Eyebrows from "../Eyebrows/Eyebrows";
 import Delivery from "../Delivery/Delivery";
 import Cooker from "../Cooker/Cooker";
 import Psych from "../Psych/Psych";
+import NavTest from "../NavBarMenu/NavTest";
 
 const NavBar = styled.nav`
   position: fixed;
@@ -40,7 +41,8 @@ const ServicesPage = (props) => {
         <img className={s.openIcon} src={openIcon} alt="open" />
       </button>
       <NavBar navbar={navbar}>
-        <NavBarMenu showNavbar={showNavbar} />
+        {/* <NavBarMenu showNavbar={showNavbar} /> */}
+        <NavTest showNavbar={showNavbar} />
       </NavBar>
 
       <Routes>
