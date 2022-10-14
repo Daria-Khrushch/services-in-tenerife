@@ -83,8 +83,8 @@ flex-direction: column;
 
 
     .avatar {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 .contacts{
     justify-content: center;

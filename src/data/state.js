@@ -1,7 +1,5 @@
 import man from "./../images/men.png";
 import woman from "./../images/woman.png";
-import hairdresserGalleryOne from './../images/photo_2022-10-03_18-31-25.jpg';
-import hairdresserGalleryTwo from './../images/photo_2022-10-03_18-34-42.jpg';
 import radmiraManicur from './../images/manicur/radmira.jpg';
 import nataliaManicur from './../images/manicur/natalia.jpg';
 import browsGallery from './../images/brows.jpg';
@@ -15,117 +13,47 @@ import juliaDressTwo from './../images/products/juliaDressTwo.jpg';
 import juliaDressThree from './../images/products/juliaDressThree.jpg';
 import juliaDressFour from './../images/products/juliaDressFour.jpg';
 import juliaDressFive from './../images/products/juliaDressFive.jpg';
-import cookerLena from './../images/cooker/cookerLena.jpg'
+import cookerLena from './../images/cooker/cookerLena.jpg';
+import hairOksana from './../images/hair/oksanaHair.jpg';
+import nataliClean from './../images/cleaning/nataliClean.jpg';
+import cleanInna from './../images/cleaning/cleanInna.jpg';
 
 
+// €
 
-
+// git add .
+// git commit -m "test"
+// git push origin main
 const state = {
   ServicesPage: {
     cleaningData: [
       {
-        id: 1,
-        name: "Тест",
-        avatar: woman,
+        id: "Natali+380637369507",
+        name: "Натали",
+        avatar: nataliClean,
         about:
-          "Вологе та сухе прибирання приміщень, миття вікон, фасаду, мийка санвузла, заміна пакетів в урнах. Розмовляю українською та російською.",
-        location: "Los Cristianos, Adeje, Arona",
+          "Предоставляю услуги по уборке апартаментов, вилл, коммерческой недвижимости. Качественный сервис и выгодная цена! Уборка регулярная или одноразовая. Аккуратно и с заботой отношусь к предметам интерьера вашего помещения. Услуги предоставляю по всему Тенерифе. Владею испанским, русским и украинским языками. Telegram и WhatsApp +380637369507, звонить 611597350.",
+        location: "South and North Tenerife",
         contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
+          telega: 'https://t.me/+380637369507',
+          whatsapp: " https://wa.me/+380637369507"
         },
-        price: "10€/год.",
+        price: "10€/час",
       },
-      {
-        id: 2,
-        name: "Тест",
-        avatar: man,
+       {
+        id: "Inna+380632836761",
+        name: "Инна",
+        avatar: cleanInna,
         about:
-          "Трудолюбивый, активный и исполнительный. Поддержание чистоты и уборка помещений. Разговариваю на испанском, русском и украинском.",
-        location: "Las Caletillas, Candelaria",
-        contacts: "+3400002",
-        price: "15€/год.",
+          "Опыт работы пол года. Говорю на русском и украинском. Немного на английском.",
+        location: "Los Cristianos, Costa Adeje, Adeje",
+        contacts: {
+          telega: 'https://t.me/+380632836761',
+          whatsapp: " https://wa.me/+380632836761"
+        },
+        price: "10€/час",
       },
-      {
-        id: 3,
-        name: "Тест",
-        avatar: woman,
-        about:
-          "Вологе та сухе прибирання приміщень, миття вікон, фасаду, мийка санвузла, заміна пакетів в урнах. Розмовляю українською та російською.",
-        location: "Los Cristianos, Adeje, Arona",
-        contacts: "+3400000",
-        price: "10€/год.",
-      },
-      {
-        id: 4,
-        name: "Тест",
-        avatar: man,
-        about:
-          "Трудолюбивый, активный и исполнительный. Поддержание чистоты и уборка помещений. Разговариваю на испанском, русском и украинском.",
-        location: "Las Caletillas, Candelaria",
-        contacts: "+3400002",
-        price: "15€/год.",
-      },
-      {
-        id: 5,
-        name: "Тест",
-        avatar: woman,
-        about:
-          "Вологе та сухе прибирання приміщень, миття вікон, фасаду, мийка санвузла, заміна пакетів в урнах. Розмовляю українською та російською.",
-        location: "Los Cristianos, Adeje, Arona",
-        contacts: "+3400000",
-        price: "10€/год.",
-      },
-      {
-        id: 6,
-        name: "Тест",
-        avatar: man,
-        about:
-          "Трудолюбивый, активный и исполнительный. Поддержание чистоты и уборка помещений. Разговариваю на испанском, русском и украинском.",
-       location: "Las Caletillas, Candelaria",
-        contacts: "+3400002",
-        price: "15€/год.",
-      },
-      {
-        id: 7,
-        name: "Тест",
-        avatar: woman,
-        about:
-          "Вологе та сухе прибирання приміщень, миття вікон, фасаду, мийка санвузла, заміна пакетів в урнах. Розмовляю українською та російською.",
-        location: "Los Cristianos, Adeje, Arona",
-        contacts: "+3400000",
-        price: "10€/год.",
-      },
-      {
-        id: 8,
-        name: "Тест",
-        avatar: man,
-        about:
-          "Трудолюбивый, активный и исполнительный. Поддержание чистоты и уборка помещений. Разговариваю на испанском, русском и украинском.",
-       location: "Las Caletillas, Candelaria",
-        contacts: "+3400002",
-        price: "15€/год.",
-      },
-      {
-        id: 9,
-        name: "Тест",
-        avatar: woman,
-        about:
-          "Вологе та сухе прибирання приміщень, миття вікон, фасаду, мийка санвузла, заміна пакетів в урнах. Розмовляю українською та російською.",
-        location: "Los Cristianos, Adeje, Arona",
-        contacts: "+3400000",
-        price: "10€/год.",
-      },
-      {
-        id: 10,
-        name: "Тест",
-        avatar: man,
-        about:
-          "Трудолюбивый, активный и исполнительный. Поддержание чистоты и уборка помещений. Разговариваю на испанском, русском и украинском.",
-        location: "Las Caletillas, Candelaria",
-        contacts: "+3400002",
-        price: "15€/год.",
-      },
+     
     ],
     driverData: [
       {
@@ -227,88 +155,14 @@ const state = {
     ],
     hairdresserData: [
       {
-        id: 1,
-        gallery: hairdresserGalleryOne,
-        about: "Мене звати Тест. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціни помірні.",
-        location: "San Isidro",
+        id: "Oksana+380957583249",
+        gallery: hairOksana,
+        about: "Мене звати Оксана. Роблю жіночі, чоловічі та дитячі стрижки. Також зачіски та фарбування. Працювала в Україні 16 років перукарем. Приймаю дома. Живу в Плая Сан Хуан. Ціни: жіноча стрижка-10€, чоловіча і дитяча-8€, фарбування в один тон-10€. Інше по ситуації, залежить від складності роботи і побажання клієнтки.",
+        location: "Playa San Juan",
         contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
+          telega: 'https://t.me/+380957583249',
+          whatsapp: " https://wa.me/+380957583249"
         },
-      },
-      {
-        id: 2,
-        gallery: hairdresserGalleryTwo,
-        about: "Меня зовут Тест. Я парикмахер-колорист с опытом работы более 5 лет. Принимаю на дому. Сделаю из вас красотку. Пишите!",
-        location: "Alcalá",
-        contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
-        },
-
-      },
-       {
-        id: 3,
-        gallery: hairdresserGalleryOne,
-        about: "Мене звати Тест. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціни помірні.",
-        location: "San Isidro",
-        contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
-        },
-      },
-      {
-        id: 4,
-        gallery: hairdresserGalleryTwo,
-        about: "Меня зовут Тест. Я парикмахер-колорист с опытом работы более 5 лет. Принимаю на дому. Сделаю из вас красотку. Пишите!",
-        location: "Alcalá",
-        contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
-        },
-
-      },
-       {
-        id: 5,
-        gallery: hairdresserGalleryOne,
-        about: "Мене звати Тест. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціни помірні.",
-        location: "San Isidro",
-        contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
-        },
-      },
-      {
-        id: 6,
-        gallery: hairdresserGalleryTwo,
-        about: "Меня зовут Тест. Я парикмахер-колорист с опытом работы более 5 лет. Принимаю на дому. Сделаю из вас красотку. Пишите!",
-        location: "Alcalá",
-        contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
-        },
-
-      },
-       {
-        id: 7,
-        gallery: hairdresserGalleryOne,
-        about: "Мене звати Тест. Роблю стрижки та покраску волосся. Розмовляю українською та іспанською. Ціни помірні.",
-        location: "San Isidro",
-        contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
-        },
-      },
-      {
-        id: 8,
-        gallery: hairdresserGalleryTwo,
-        about: "Меня зовут Тест. Я парикмахер-колорист с опытом работы более 5 лет. Принимаю на дому. Сделаю из вас красотку. Пишите!",
-        location: "Alcalá",
-        contacts: {
-          telega: 'https://t.me/Made_in_Ukrai',
-          whatsapp: " https://wa.me/+34604379859"
-        },
-
       },
       
     ],

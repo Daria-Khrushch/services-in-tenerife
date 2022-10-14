@@ -1,77 +1,70 @@
-.logo{
-    height: 50px;
-    width: auto;
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-    
+.logo {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
 }
 
-.wrapper{
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-
+.wrapper {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .navLink,
 .navLinkActive {
-  
-    font-size: 15px; 
+  font-size: 15px;
 }
 
 .navLink:not(:last-child),
-.navLinkActive:not(:last-child){
-margin-right: 10px;
+.navLinkActive:not(:last-child) {
+  margin-right: 10px;
 }
 
-.navLink:hover{
-    text-decoration: underline;
+.navLink:hover {
+  text-decoration: underline;
 }
 
-.linksContainer{
-    padding-right: 5px;
+.linksContainer {
+  padding-right: 5px;
 }
 
-.active{
-    text-decoration: underline;
+.active {
+  text-decoration: underline;
 }
 
-.header{
-    background-color: #1976d2;
-        color: white;
-        padding: 5px;
-
-        
+.header {
+  background-color: #1976d2;
+  color: white;
+  padding: 5px;
 }
-
 
 @media (min-width: 900px) {
-    .navLink,
-        .navLinkActive {
-            margin-right: 15px;
-            font-size: 18px;
-    
-        }
-    .linksContainer {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    .logo{
-        height: 60px;
-    }
+  .navLink,
+  .navLinkActive {
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  .linksContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logo {
+    height: 60px;
+  }
 
-        .wrapper {
-            justify-content: center;
-        }
+  .wrapper {
+    justify-content: center;
+  }
 
-.linksContainer{
-margin-left: 85px;
-}
-                          .navLink:not(:last-child),
-                          .navLinkActive:not(:last-child) {
-                              margin-right: 20px;
-                          }
+  .linksContainer {
+    margin-left: 85px;
+  }
+  .navLink:not(:last-child),
+  .navLinkActive:not(:last-child) {
+    margin-right: 20px;
+  }
 }

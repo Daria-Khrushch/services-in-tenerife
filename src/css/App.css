@@ -10,8 +10,9 @@
 }
 
 .wrapper{
- background-image: url(./../images/1507479499.jpg);
+ background-image: url(./../images/bk-image.jpg);
  background-repeat: no-repeat;
+ background-position: center;
   background-size: cover;
 }
 
