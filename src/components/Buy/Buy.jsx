@@ -7,98 +7,71 @@ import { Navigation, Thumbs } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import s from "./Buy.module.css";
 import "./swiper.css";
+import {
+  Container,
+  Wrapper,
+  List,
+  SwiperBox,
+  Text,
+  Price,
+  Contacts,
+  Icon,
+} from "./Buy.styled";
 
 const Buy = (props) => {
   return (
-    <div className={s.buy}>
-      <div className={s.wrapper}>
+    <Container>
+      <Wrapper>
         {props.state.map((c) => (
-          <ul className={s.list} key={c.id}>
-            <li className={s.swiperBox}>
+          <List key={c.id}>
+            <SwiperBox>
               <Swiper
                 loop={true}
                 spaceBetween={10}
                 navigation={true}
                 modules={[Navigation, Thumbs]}
                 grabCursor={true}
-                className={s.productGallery}
               >
                 <SwiperSlide>
-                  <img
-                    className={s.productImg}
-                    src={c.pictures.one}
-                    alt="product"
-                  />
+                  <img src={c.pictures.one} alt="product" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    className={s.productImg}
-                    src={c.pictures.two}
-                    alt="product"
-                  />
+                  <img src={c.pictures.two} alt="product" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    className={s.productImg}
-                    src={c.pictures.three}
-                    alt="product"
-                  />
+                  <img src={c.pictures.three} alt="product" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    className={s.productImg}
-                    src={c.pictures.four}
-                    alt="product"
-                  />
+                  <img src={c.pictures.four} alt="product" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    className={s.productImg}
-                    src={c.pictures.five}
-                    alt="product"
-                  />
+                  <img src={c.pictures.five} alt="product" />
                 </SwiperSlide>
               </Swiper>
-            </li>
-            <li className={s.text}>{c.text}</li>
-            <li className={s.price}>{c.price}</li>
-            <li className={s.contacts}>
-              <a
-                className={s.link}
-                href={c.contacts.telega}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img className={s.telega} src={icon} alt="icon" />
+            </SwiperBox>
+            <Text>{c.text}</Text>
+            <Price>{c.price}</Price>
+            <Contacts>
+              <a href={c.contacts.telega} target="_blank" rel="noreferrer">
+                <Icon src={icon} alt="icon" />
               </a>
 
               {c.contacts.whatsapp && (
-                <a
-                  className={s.link}
-                  href={c.contacts.whatsapp}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img className={s.telega} src={wpIcon} alt="icon" />
+                <a href={c.contacts.whatsapp} target="_blank" rel="noreferrer">
+                  <Icon src={wpIcon} alt="icon" />
                 </a>
               )}
               {c.contacts.insta && (
-                <a
-                  className={s.link}
-                  href={c.contacts.insta}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img className={s.telega} src={insta} alt="icon" />
+                <a href={c.contacts.insta} target="_blank" rel="noreferrer">
+                  <Icon src={insta} alt="icon" />
                 </a>
               )}
-            </li>
-          </ul>
+            </Contacts>
+          </List>
         ))}
-      </div>
-    </div>
+      </Wrapper>
+    </Container>
   );
 };
 

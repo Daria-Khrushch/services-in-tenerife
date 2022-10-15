@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Footer = styled.footer`
+grid-area: footer;
  display: flex;
   align-items: center;
   justify-content: center;

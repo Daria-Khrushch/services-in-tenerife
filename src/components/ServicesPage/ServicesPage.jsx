@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-// import NavBarMenu from "../NavBarMenu/NavBarMenu";
 import Cleaning from "../Cleaning/Cleaning";
 import Hairdresser from "../Hairdresser/Hairdresser";
 import Driver from "../Driver/Driver";
@@ -9,13 +8,13 @@ import Nanny from "../Nanny/Nanny";
 import Sport from "../Sport/Sport";
 import Masseur from "../Masseur/Masseur";
 import openIcon from "./../../images/openIcon2.png";
-import s from "./ServicesPage.module.css";
 import styled from "styled-components";
 import Eyebrows from "../Eyebrows/Eyebrows";
 import Delivery from "../Delivery/Delivery";
 import Cooker from "../Cooker/Cooker";
 import Psych from "../Psych/Psych";
 import NavTest from "../NavBarMenu/NavTest";
+import { Container, OpenButton } from "./ServicesPage.styled";
 
 const NavBar = styled.nav`
   position: fixed;
@@ -36,12 +35,11 @@ const ServicesPage = (props) => {
   const showNavbar = () => setNavbar(!navbar);
 
   return (
-    <div className={s.wrapper}>
-      <button className={s.open} onClick={showNavbar}>
-        <img className={s.openIcon} src={openIcon} alt="open" />
-      </button>
+    <Container>
+      <OpenButton onClick={showNavbar}>
+        <img src={openIcon} alt="open" />
+      </OpenButton>
       <NavBar navbar={navbar}>
-        {/* <NavBarMenu showNavbar={showNavbar} /> */}
         <NavTest showNavbar={showNavbar} />
       </NavBar>
 
@@ -88,7 +86,7 @@ const ServicesPage = (props) => {
           element={<Psych state={props.state.psychData} />}
         />
       </Routes>
-    </div>
+    </Container>
   );
 };
 

@@ -18,16 +18,13 @@ const NavTest = (props) => {
   return (
     <div className="navBar">
       <div className={open ? "sidebar-item open" : "sidebar-item"}>
-        <div className="sidebar-title">
+        <div className="sidebar-title" onClick={() => setOpen(!open)}>
           <div className="title-wripper">
             <img className="navIcon" src={beauty} alt="beauty icon" />
             <span>{t("beauty")}</span>
           </div>
 
-          <i
-            className="bi bi-chevron-down toggle-btn"
-            onClick={() => setOpen(!open)}
-          ></i>
+          <i className="bi bi-chevron-down toggle-btn"></i>
         </div>
 
         <div className="sidebar-content">
@@ -63,16 +60,13 @@ const NavTest = (props) => {
         </div>
       </div>
       <div className={opentwo ? "sidebar-item open" : "sidebar-item"}>
-        <div className="sidebar-title">
+        <div className="sidebar-title" onClick={() => setOpentwo(!opentwo)}>
           <div className="title-wripper">
             <img className="navIcon" src={health} alt="beauty icon" />
             <span>{t("health")}</span>
           </div>
 
-          <i
-            className="bi bi-chevron-down toggle-btn"
-            onClick={() => setOpentwo(!opentwo)}
-          ></i>
+          <i className="bi bi-chevron-down toggle-btn"></i>
         </div>
 
         <div className="sidebar-content">
@@ -108,16 +102,13 @@ const NavTest = (props) => {
         </div>
       </div>
       <div className={openthree ? "sidebar-item open" : "sidebar-item"}>
-        <div className="sidebar-title">
+        <div className="sidebar-title" onClick={() => setOpenthree(!openthree)}>
           <div className="title-wripper">
             <img className="navIcon" src={life} alt="beauty icon" />
             <span>{t("life")}</span>
           </div>
 
-          <i
-            className="bi bi-chevron-down toggle-btn"
-            onClick={() => setOpenthree(!openthree)}
-          ></i>
+          <i className="bi bi-chevron-down toggle-btn"></i>
         </div>
 
         <div className="sidebar-content">
@@ -153,16 +144,13 @@ const NavTest = (props) => {
         </div>
       </div>
       <div className={openfour ? "sidebar-item open" : "sidebar-item"}>
-        <div className="sidebar-title">
+        <div className="sidebar-title" onClick={() => setOpenfour(!openfour)}>
           <div className="title-wripper">
             <img className="navIcon" src={car} alt="beauty icon" />
             <span>{t("vehicle")}</span>
           </div>
 
-          <i
-            className="bi bi-chevron-down toggle-btn"
-            onClick={() => setOpenfour(!openfour)}
-          ></i>
+          <i className="bi bi-chevron-down toggle-btn"></i>
         </div>
 
         <div className="sidebar-content">

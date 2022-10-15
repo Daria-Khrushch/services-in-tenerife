@@ -1,18 +1,18 @@
 import React from "react";
 import canary from "./../../images/icon.jpg";
+import LanguageBtn from "./../LanguageBtn/LanguageBtn.jsx";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Container, Wrapper, Logo, Links } from "./Header.styled";
 import s from "./Header.module.css";
 
 const Header = () => {
   const { t } = useTranslation();
   return (
-    <div className={s.header}>
-      <div className={s.wrapper}>
-        <div>
-          <img className={s.logo} src={canary} alt="logo" />
-        </div>
-        <div className={s.linksContainer}>
+    <Container>
+      <Wrapper>
+        <Logo src={canary} alt="logo" />
+        <Links>
           <NavLink
             className={({ isActive }) =>
               isActive
@@ -43,9 +43,10 @@ const Header = () => {
           >
             {t("products")}
           </NavLink>
-        </div>
-      </div>
-    </div>
+        </Links>
+        <LanguageBtn />
+      </Wrapper>
+    </Container>
   );
 };
 

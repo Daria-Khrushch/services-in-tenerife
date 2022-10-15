@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./../Header/Header";
 import ServicesPage from "./../ServicesPage/ServicesPage";
 import News from "./../News/News";
-import LanguageBtn from "./../LanguageBtn/LanguageBtn.jsx";
 import Buy from "./../Buy/Buy";
 import { Wrapper, Footer } from "./App.styled";
 
@@ -10,7 +9,7 @@ const App = (props) => {
   return (
     <Wrapper>
       <Header />
-      <LanguageBtn state={props.state} />
+
       <Routes>
         <Route
           path="/*"

@@ -1,52 +1,52 @@
 import React from "react";
+import {
+  Wrapper,
+  ManicurContainer,
+  List,
+  Gallery,
+  GalleryImg,
+  About,
+  Location,
+  Contacts,
+  Icon,
+  ContinueLink,
+} from "../../commonStyles/servicesTwo.styled";
 import icon from "./../../images/telegram.png";
 import wpIcon from "./../../images/icons8-whatsapp-48.png";
-import s from "./Manicurist.module.css";
 
 const Manicurist = (props) => {
   return (
-    <div className={s.manicur}>
-      <div className={s.wrapper}>
+    <ManicurContainer>
+      <Wrapper>
         {props.state.map((c) => (
-          <ul key={c.id} className={s.list}>
-            <li className={s.gallery}>
-              <img className={s.galleryItem} src={c.gallery} alt="gallery" />
-            </li>
-            <li className={s.about}>
+          <List key={c.id}>
+            <Gallery>
+              <GalleryImg src={c.gallery} alt="gallery" />
+            </Gallery>
+            <About>
               {c.about}
-              <a
-                className={s.workLink}
+              <ContinueLink
                 href={c.contacts.instagram}
                 target="_blank"
                 rel="noreferrer"
               >
                 тут.
-              </a>
-            </li>
-            <li className={s.location}>{c.location}</li>
-            <li className={s.contacts}>
-              <a
-                className={s.link}
-                href={c.contacts.telega}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img className={s.telega} src={icon} alt="icon" />
+              </ContinueLink>
+            </About>
+            <Location>{c.location}</Location>
+            <Contacts>
+              <a href={c.contacts.telega} target="_blank" rel="noreferrer">
+                <Icon src={icon} alt="icon" />
               </a>
 
-              <a
-                className={s.link}
-                href={c.contacts.whatsapp}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img className={s.telega} src={wpIcon} alt="icon" />
+              <a href={c.contacts.whatsapp} target="_blank" rel="noreferrer">
+                <Icon src={wpIcon} alt="icon" />
               </a>
-            </li>
-          </ul>
+            </Contacts>
+          </List>
         ))}
-      </div>
-    </div>
+      </Wrapper>
+    </ManicurContainer>
   );
 };
 
