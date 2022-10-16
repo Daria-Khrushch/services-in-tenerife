@@ -25,13 +25,15 @@ const Manicurist = (props) => {
             </Gallery>
             <About>
               {c.about}
-              <ContinueLink
-                href={c.contacts.instagram}
-                target="_blank"
-                rel="noreferrer"
-              >
-                тут.
-              </ContinueLink>
+              {c.contacts.instagram && (
+                <ContinueLink
+                  href={c.contacts.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  тут.
+                </ContinueLink>
+              )}
             </About>
             <Location>{c.location}</Location>
             <Contacts>

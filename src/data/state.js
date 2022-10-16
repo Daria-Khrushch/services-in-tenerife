@@ -17,6 +17,7 @@ import cookerLena from './../images/cooker/cookerLena.jpg';
 import hairOksana from './../images/hair/oksanaHair.jpg';
 import nataliClean from './../images/cleaning/nataliClean.jpg';
 import cleanInna from './../images/cleaning/cleanInna.jpg';
+import maniSveta from './../images/manicur/svetlana.jpg';
 
 
 // €
@@ -187,6 +188,16 @@ const state = {
           telega: 'https://t.me/+34642673891',
            whatsapp: "https://wa.me/+34642673891",
           instagram: "https://instagram.com/perfectnailses?igshid=YmMyMTA2M2Y="
+        },
+      },
+      {
+        id: "Svetlana+380950423296",
+        gallery: maniSveta,
+        about: "Меня зовут Светлана и я мастер маникюра. Нахожусь в Эль Медано. Покрытие гель лаком 20€, наращивание 25€, корекцция 20€. Все инструменты проходят стирилизацию. Разговариваю на русском, украинском и немного знаю английский.",
+        location: "El Médano",
+         contacts: {
+          telega: 'https://t.me/+380950423296',
+           whatsapp: "https://wa.me/+380950423296"
         },
       },
     ],
