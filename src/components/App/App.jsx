@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "./../Header/Header";
-import ServicesPage from "./../ServicesPage/ServicesPage";
-import News from "./../News/News";
-import Buy from "./../Buy/Buy";
+import Header from "components/Header/Header";
+import ServicesPage from "components/ServicesPage/ServicesPage";
+import News from "components/News/News";
+import Buy from "components/Buy/Buy";
 import { Wrapper, Footer } from "./App.styled";
 
 const App = (props) => {

@@ -10,9 +10,9 @@ import {
   Contacts,
   Icon,
   MasseurContainer,
-} from "../../commonStyles/services.styled";
-import icon from "./../../images/telegram.png";
-import wpIcon from "./../../images/icons8-whatsapp-48.png";
+} from "commonStyles/services.styled";
+import icon from "images/telegram.png";
+import wpIcon from "images/icons8-whatsapp-48.png";
 
 const Masseur = (props) => {
   return (

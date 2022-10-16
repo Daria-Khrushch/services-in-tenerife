@@ -10,10 +10,10 @@ import {
   Contacts,
   Icon,
   ContinueLink,
-} from "../../commonStyles/servicesTwo.styled";
-import icon from "./../../images/telegram.png";
-import wpIcon from "./../../images/icons8-whatsapp-48.png";
-import cookerOlga from "./../../images/cooker/cookerOlga.jpg";
+} from "commonStyles/servicesTwo.styled";
+import icon from "images/telegram.png";
+import wpIcon from "images/icons8-whatsapp-48.png";
+import cookerOlga from "images/cooker/cookerOlga.jpg";
 
 const Cooker = (props) => {
   const [showMore, setShowMore] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { BtnContainer, Btn } from "./LanguageBtn.styled";
-import useLocalStorage from "../../hooks/use-localstorage";
+import useLocalStorage from "hooks/use-localstorage";
 import i18n from "../../i18n";
 
 function LanguageBtn() {

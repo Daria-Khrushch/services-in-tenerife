@@ -9,9 +9,9 @@ import {
   Location,
   Contacts,
   Icon,
-} from "../../commonStyles/servicesTwo.styled";
-import icon from "./../../images/telegram.png";
-import wpIcon from "./../../images/icons8-whatsapp-48.png";
+} from "commonStyles/servicesTwo.styled";
+import icon from "images/telegram.png";
+import wpIcon from "images/icons8-whatsapp-48.png";
 
 const Hairdresser = (props) => {
   return (

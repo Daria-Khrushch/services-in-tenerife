@@ -1,7 +1,7 @@
 import React from "react";
-import icon from "./../../images/telegram.png";
-import wpIcon from "./../../images/icons8-whatsapp-48.png";
-import insta from "./../../images/instagram.png";
+import icon from "images/telegram.png";
+import wpIcon from "images/icons8-whatsapp-48.png";
+import insta from "images/instagram.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper";
 import "swiper/css";

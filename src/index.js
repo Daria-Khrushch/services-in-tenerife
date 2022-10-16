@@ -9,6 +9,7 @@ import { ThemeProvider } from "@emotion/react";
 const theme = {
   colors: {
     bkTransparent: "rgba(255, 255, 255, 0.7)",
+    navTransparent:"rgba(255, 255, 255, 0.1)",
     white: "#fff",
     main: "#1976d2",
     textColor: "#000",

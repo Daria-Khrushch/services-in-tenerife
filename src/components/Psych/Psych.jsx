@@ -9,10 +9,10 @@ import {
   Icon,
   PhsychContainer,
   ContinueLink,
-} from "../../commonStyles/servicesTwo.styled";
-import icon from "./../../images/telegram.png";
-import wpIcon from "./../../images/icons8-whatsapp-48.png";
-import Irena from "./../../images/phsych/Irena.jpg";
+} from "commonStyles/servicesTwo.styled";
+import icon from "images/telegram.png";
+import wpIcon from "images/icons8-whatsapp-48.png";
+import Irena from "images/phsych/Irena.jpg";
 
 const Psych = (props) => {
   const [showMore, setShowMore] = useState(false);

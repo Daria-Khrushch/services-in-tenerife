@@ -2,12 +2,13 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import beauty from "./../../images/beauty.png";
-import health from "./../../images/health.png";
-import life from "./../../images/life.png";
-import car from "./../../images/car.png";
+import beauty from "images/beauty.png";
+import health from "images/health.png";
+import life from "images/life.png";
+import car from "images/car.png";
+import { Wrapper } from "./NavMenu.styled";
 
-import "./NavTest.css";
+import "./NavMenu.css";
 
 const NavTest = (props) => {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ const NavTest = (props) => {
   const [openthree, setOpenthree] = useState(false);
   const [openfour, setOpenfour] = useState(false);
   return (
-    <div className="navBar">
+    <Wrapper>
       <div className={open ? "sidebar-item open" : "sidebar-item"}>
         <div className="sidebar-title" onClick={() => setOpen(!open)}>
           <div className="title-wripper">
@@ -175,7 +176,7 @@ const NavTest = (props) => {
           </NavLink>
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 };
 

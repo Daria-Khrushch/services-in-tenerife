@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import Cleaning from "../Cleaning/Cleaning";
-import Hairdresser from "../Hairdresser/Hairdresser";
-import Driver from "../Driver/Driver";
-import Manicurist from "../Manicurist/Manicurist";
-import Nanny from "../Nanny/Nanny";
-import Sport from "../Sport/Sport";
-import Masseur from "../Masseur/Masseur";
-import openIcon from "./../../images/openIcon2.png";
+import Cleaning from "components/Cleaning/Cleaning";
+import Hairdresser from "components/Hairdresser/Hairdresser";
+import Driver from "components/Driver/Driver";
+import Manicurist from "components/Manicurist/Manicurist";
+import Nanny from "components/Nanny/Nanny";
+import Sport from "components/Sport/Sport";
+import Masseur from "components/Masseur/Masseur";
+import openIcon from "images/openIcon2.png";
 import styled from "styled-components";
-import Eyebrows from "../Eyebrows/Eyebrows";
-import Delivery from "../Delivery/Delivery";
-import Cooker from "../Cooker/Cooker";
-import Psych from "../Psych/Psych";
-import NavTest from "../NavBarMenu/NavTest";
+import Eyebrows from "components/Eyebrows/Eyebrows";
+import Delivery from "components/Delivery/Delivery";
+import Cooker from "components/Cooker/Cooker";
+import Psych from "components/Psych/Psych";
+import NavMenu from "components/NavBarMenu/NavMenu";
 import { Container, OpenButton } from "./ServicesPage.styled";
 
 const NavBar = styled.nav`
@@ -40,7 +40,7 @@ const ServicesPage = (props) => {
         <img src={openIcon} alt="open" />
       </OpenButton>
       <NavBar navbar={navbar}>
-        <NavTest showNavbar={showNavbar} />
+        <NavMenu showNavbar={showNavbar} />
       </NavBar>
 
       <Routes>
