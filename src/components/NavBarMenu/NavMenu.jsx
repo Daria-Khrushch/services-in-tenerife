@@ -7,6 +7,7 @@ import health from "images/health.png";
 import life from "images/life.png";
 import car from "images/car.png";
 import { Wrapper } from "./NavMenu.styled";
+import AddAdvertBtn from "components/AddAdvertBtn/AddAdvertBtn";
 
 import "./NavMenu.css";
 
@@ -176,6 +177,8 @@ const NavTest = (props) => {
           </NavLink>
         </div>
       </div>
+
+      <AddAdvertBtn />
     </Wrapper>
   );
 };
