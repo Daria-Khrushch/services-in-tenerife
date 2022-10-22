@@ -6,6 +6,7 @@ import beauty from "images/beauty.png";
 import health from "images/health.png";
 import life from "images/life.png";
 import car from "images/car.png";
+import interesting from "images/interesting.png";
 import { Wrapper } from "./NavMenu.styled";
 import AddAdvertBtn from "components/AddAdvertBtn/AddAdvertBtn";
 
@@ -17,6 +18,7 @@ const NavTest = (props) => {
   const [opentwo, setOpentwo] = useState(false);
   const [openthree, setOpenthree] = useState(false);
   const [openfour, setOpenfour] = useState(false);
+  const [openfive, setOpenfive] = useState(false);
   return (
     <Wrapper>
       <div className={open ? "sidebar-item open" : "sidebar-item"}>
@@ -174,6 +176,29 @@ const NavTest = (props) => {
             to="/driver"
           >
             {t("driver")}
+          </NavLink>
+        </div>
+      </div>
+
+      <div className={openfive ? "sidebar-item open" : "sidebar-item"}>
+        <div className="sidebar-title" onClick={() => setOpenfive(!openfive)}>
+          <div className="title-wripper">
+            <img className="navIcon" src={interesting} alt="beauty icon" />
+            <span>{t("interesting")}</span>
+          </div>
+
+          <i className="bi bi-chevron-down toggle-btn"></i>
+        </div>
+
+        <div className="sidebar-content">
+          <NavLink
+            onClick={props.showNavbar}
+            className={({ isActive }) =>
+              isActive ? "navLink active" : "navLink"
+            }
+            to="/search"
+          >
+            {t("search")}
           </NavLink>
         </div>
       </div>

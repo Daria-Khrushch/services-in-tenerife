@@ -18,6 +18,7 @@ import hairOksana from './../images/hair/oksanaHair.jpg';
 import nataliClean from './../images/cleaning/nataliClean.jpg';
 import cleanInna from './../images/cleaning/cleanInna.jpg';
 import maniSveta from './../images/manicur/svetlana.jpg';
+import tetianaInterest from 'images/interesting/tetiana.jpg'
 
 
 // €
@@ -549,6 +550,20 @@ const state = {
     ],
     psychData: [
      
+    ],
+
+    interestingData: [
+       {
+        id: "Тетяна+380662918093",
+        name: "Тетяна",
+        avatar: tetianaInterest,
+        about: "Виконую генеалогічний пошук, це пошук даних у архівах України, складання родового древа, генограми, і родословної взагалі. Наразі виконую віддалений онлайн пошук. Провожу консультування по збереженості документів, та перспектив пошуку. Вартість консультації - 10 євро, вартість пошуку  за однією гілкою (одне прізвище) в межах 100 років - від 80 євро, усе залежить від збереженості архівних фондів.",
+        location: "Online",
+           contacts: {
+          telega: 'https://t.me/+380662918093',
+          whatsapp: " https://wa.me/+380662918093"
+        },
+      },
     ]
   },
   BuyPage: 

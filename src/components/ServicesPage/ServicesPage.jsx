@@ -15,6 +15,7 @@ import Cooker from "components/Cooker/Cooker";
 import Psych from "components/Psych/Psych";
 import NavMenu from "components/NavBarMenu/NavMenu";
 import { Container, OpenButton } from "./ServicesPage.styled";
+import Interesting from "components/Interesting/Interesting";
 
 const NavBar = styled.nav`
   position: fixed;
@@ -84,6 +85,11 @@ const ServicesPage = (props) => {
         <Route
           path="/psychology"
           element={<Psych state={props.state.psychData} />}
+        />
+
+        <Route
+          path="/search"
+          element={<Interesting state={props.state.interestingData} />}
         />
       </Routes>
     </Container>
