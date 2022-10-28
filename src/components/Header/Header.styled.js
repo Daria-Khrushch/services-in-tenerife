@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 
 export const Container = styled.header`
   background-color: ${(props) => props.theme.colors.main};
@@ -35,5 +36,27 @@ padding-right: 5px;
  @media (min-width: 900px) {
     padding-left: 20px;
     padding-right: 20px;
+  }
+`
+
+export const StyledLink = styled(NavLink)`
+font-size: 15px;
+
+ &:not(:last-child){
+    margin-right: 10px
+  }
+:hover {
+  text-decoration: underline;
+}
+&.active {
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  &:not(:last-child){
+    margin-right: 15px;
+  }
+    
+    font-size: 18px;
   }
 `

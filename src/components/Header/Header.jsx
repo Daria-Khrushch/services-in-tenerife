@@ -1,48 +1,26 @@
 import React from "react";
 import canary from "images/icon.jpg";
 import LanguageBtn from "components/LanguageBtn/LanguageBtn.jsx";
-import { NavLink } from "react-router-dom";
+
 import { useTranslation } from "react-i18next";
-import { Container, Wrapper, Logo, Links } from "./Header.styled";
-import s from "./Header.module.css";
+import { Container, Wrapper, Logo, Links, StyledLink } from "./Header.styled";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { t } = useTranslation();
   return (
     <Container>
       <Wrapper>
-        <Logo src={canary} alt="logo" />
+        <Link to="/">
+          <Logo src={canary} alt="logo" />
+        </Link>
         <Links>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? `${s.navLinkActive} ${s.active}`
-                : `${s.navLink} ${s.notActive}`
-            }
-            to="/services"
-          >
-            {t("services")}
-          </NavLink>
-          {/* <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? `${s.navLinkActive} ${s.active}`
-                : `${s.navLink} ${s.notActive}`
-            }
-            to="/feeds"
+          <StyledLink to="/services">{t("services")}</StyledLink>
+          {/* <StyledLink to="/feeds"
           >
             {t("feeds")}
-          </NavLink> */}
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? `${s.navLinkActive} ${s.active}`
-                : `${s.navLink} ${s.notActive}`
-            }
-            to="/buy"
-          >
-            {t("products")}
-          </NavLink>
+          </StyledLink> */}
+          <StyledLink to="/buy">{t("products")}</StyledLink>
         </Links>
         <LanguageBtn />
       </Wrapper>

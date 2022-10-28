@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import image from './../../images/bk-image.jpg'
 
 export const Wrapper = styled.div`
-width: 100vw;
   background-image: url(${image});
   background-repeat: no-repeat;
   background-size: cover;

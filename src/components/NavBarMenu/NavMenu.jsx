@@ -37,7 +37,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/eyebrows"
+            to="eyebrows"
           >
             {t("eyebrows")}
           </NavLink>
@@ -47,7 +47,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/manicurist"
+            to="manicurist"
           >
             {t("manicurist")}
           </NavLink>
@@ -57,7 +57,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/hairdresser"
+            to="hairdresser"
           >
             {t("hairdresser")}
           </NavLink>
@@ -79,7 +79,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/masseur"
+            to="masseur"
           >
             {t("masseur")}
           </NavLink>
@@ -89,7 +89,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/sport"
+            to="sport"
           >
             {t("sport")}
           </NavLink>
@@ -99,7 +99,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/psychology"
+            to="psychology"
           >
             {t("psychology")}
           </NavLink>
@@ -121,7 +121,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/nanny"
+            to="nanny"
           >
             {t("nanny")}
           </NavLink>
@@ -131,7 +131,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/cleaning"
+            to="cleaning"
           >
             {t("cleaning")}
           </NavLink>
@@ -141,7 +141,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/cook"
+            to="cook"
           >
             {t("cooker")}
           </NavLink>
@@ -163,7 +163,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/delivery"
+            to="delivery"
           >
             {t("delivery")}
           </NavLink>
@@ -173,7 +173,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/driver"
+            to="driver"
           >
             {t("driver")}
           </NavLink>
@@ -196,7 +196,7 @@ const NavTest = (props) => {
             className={({ isActive }) =>
               isActive ? "navLink active" : "navLink"
             }
-            to="/search"
+            to="search"
           >
             {t("search")}
           </NavLink>
